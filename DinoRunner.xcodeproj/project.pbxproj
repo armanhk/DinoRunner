@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D390DFF2053354B00DBA7E6 /* libMWMSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D390DF920532F6900DBA7E6 /* libMWMSDK.a */; };
 		4D5803FE2057285E00785D18 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D390DE120530D9800DBA7E6 /* Accelerate.framework */; };
 		4D5803FF2057285E00785D18 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D390DE320530DA800DBA7E6 /* ExternalAccessory.framework */; };
 		4D5804052057285F00785D18 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5804002057285E00785D18 /* CoreGraphics.framework */; };
@@ -39,10 +38,6 @@
 		4D390DE120530D9800DBA7E6 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		4D390DE320530DA800DBA7E6 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		4D390DEE2053191400DBA7E6 /* DinoRunner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DinoRunner-Bridging-Header.h"; sourceTree = "<group>"; };
-		4D390DF720532F6900DBA7E6 /* MWMDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWMDelegate.h; sourceTree = "<group>"; };
-		4D390DF820532F6900DBA7E6 /* MWMDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWMDevice.h; sourceTree = "<group>"; };
-		4D390DF920532F6900DBA7E6 /* libMWMSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMWMSDK.a; sourceTree = "<group>"; };
-		4D390DFA20532F6900DBA7E6 /* MWMEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWMEnum.h; sourceTree = "<group>"; };
 		4D5804002057285E00785D18 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4D5804012057285E00785D18 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		4D5804022057285E00785D18 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -75,7 +70,6 @@
 				4D5804092057285F00785D18 /* AudioToolbox.framework in Frameworks */,
 				4D5803FE2057285E00785D18 /* Accelerate.framework in Frameworks */,
 				4D5803FF2057285E00785D18 /* ExternalAccessory.framework in Frameworks */,
-				4D390DFF2053354B00DBA7E6 /* libMWMSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,17 +83,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4D390DF620532F6000DBA7E6 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				4D390DF920532F6900DBA7E6 /* libMWMSDK.a */,
-				4D390DF720532F6900DBA7E6 /* MWMDelegate.h */,
-				4D390DF820532F6900DBA7E6 /* MWMDevice.h */,
-				4D390DFA20532F6900DBA7E6 /* MWMEnum.h */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
 		4D99BA0D204D138E00FD3485 = {
 			isa = PBXGroup;
 			children = (
@@ -123,7 +106,6 @@
 		4D99BA18204D138E00FD3485 /* DinoRunner */ = {
 			isa = PBXGroup;
 			children = (
-				4D390DF620532F6000DBA7E6 /* lib */,
 				4D99BA19204D138E00FD3485 /* AppDelegate.swift */,
 				4D99BA1F204D138E00FD3485 /* GameScene.swift */,
 				4DFA12FB204E10090014F461 /* GameOverScene.swift */,

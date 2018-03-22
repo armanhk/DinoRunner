@@ -12,38 +12,10 @@ import GameplayKit
 
 
 
-class GameViewController: UIViewController, MWMDelegate {
-    
-    let mwm = MWMDevice.sharedInstance()
-    
-    func deviceFound(_ devName: String!, mfgID: String!, deviceID: String!) {
-        let str1:String = "devName = "+devName
-        let str2:String = ",mfgID = "+mfgID
-        let str3:String = ",deviceID = "+deviceID
-        mwm?.connect(deviceID)
-        
-        print(str1+str2+str3)
-    }
-    
-    func didConnect() {
-        print("didConnect")
-    }
-    
-    func didDisconnect() {
-        mwm?.disconnectDevice()
-        print("didDisconnect")
-    }
+class GameViewController: UIViewController {
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        mwm?.connect("NS252FA4:Mindwave Mobile")
-        mwm?.delegate = self
-        print("MWM SDK version: "+(mwm?.getVersion())!)
-        mwm?.enableConsoleLog(true)
-        mwm?.scanDevice()
-        
         
         let scene = GameScene(size: view.bounds.size)
         let skView = view as! SKView
