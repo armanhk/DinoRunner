@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D2B956F20645F360054FFF1 /* data-bl.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4D2B956D20645F360054FFF1 /* data-bl.txt */; };
+		4D2B957420648EBE0054FFF1 /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4D2B957320648EBE0054FFF1 /* data.txt */; };
+		4D2B9578206493D50054FFF1 /* data-at.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4D2B9577206493D40054FFF1 /* data-at.txt */; };
 		4D5803FE2057285E00785D18 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D390DE120530D9800DBA7E6 /* Accelerate.framework */; };
 		4D5803FF2057285E00785D18 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D390DE320530DA800DBA7E6 /* ExternalAccessory.framework */; };
 		4D5804052057285F00785D18 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5804002057285E00785D18 /* CoreGraphics.framework */; };
@@ -35,9 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D2B956D20645F360054FFF1 /* data-bl.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "data-bl.txt"; sourceTree = SOURCE_ROOT; };
+		4D2B957320648EBE0054FFF1 /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = SOURCE_ROOT; };
+		4D2B9577206493D40054FFF1 /* data-at.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "data-at.txt"; sourceTree = SOURCE_ROOT; };
 		4D390DE120530D9800DBA7E6 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		4D390DE320530DA800DBA7E6 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
-		4D390DEE2053191400DBA7E6 /* DinoRunner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DinoRunner-Bridging-Header.h"; sourceTree = "<group>"; };
 		4D5804002057285E00785D18 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4D5804012057285E00785D18 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		4D5804022057285E00785D18 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -89,7 +94,6 @@
 				4D99BA18204D138E00FD3485 /* DinoRunner */,
 				4D99BA33204D138E00FD3485 /* DinoRunnerTests */,
 				4D99BA17204D138E00FD3485 /* Products */,
-				4D390DEE2053191400DBA7E6 /* DinoRunner-Bridging-Header.h */,
 				4DFCD6C12050A7E2009EED56 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -106,12 +110,15 @@
 		4D99BA18204D138E00FD3485 /* DinoRunner */ = {
 			isa = PBXGroup;
 			children = (
+				4D2B9577206493D40054FFF1 /* data-at.txt */,
+				4D2B957320648EBE0054FFF1 /* data.txt */,
 				4D99BA19204D138E00FD3485 /* AppDelegate.swift */,
 				4D99BA1F204D138E00FD3485 /* GameScene.swift */,
 				4DFA12FB204E10090014F461 /* GameOverScene.swift */,
 				4D99BA21204D138E00FD3485 /* GameViewController.swift */,
 				4D99BA23204D138E00FD3485 /* Main.storyboard */,
 				4D99BA26204D138E00FD3485 /* Assets.xcassets */,
+				4D2B956D20645F360054FFF1 /* data-bl.txt */,
 				4D99BA28204D138E00FD3485 /* LaunchScreen.storyboard */,
 				4D99BA2B204D138E00FD3485 /* Info.plist */,
 			);
@@ -225,7 +232,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D2B957420648EBE0054FFF1 /* data.txt in Resources */,
+				4D2B9578206493D50054FFF1 /* data-at.txt in Resources */,
 				4D99BA25204D138E00FD3485 /* Main.storyboard in Resources */,
+				4D2B956F20645F360054FFF1 /* data-bl.txt in Resources */,
 				4D99BA27204D138E00FD3485 /* Assets.xcassets in Resources */,
 				4D99BA2A204D138E00FD3485 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -414,12 +424,12 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					DinoRunner/lib,
-					"$(PROJECT_DIR)/DinoRunner/lib",
+					"$(PROJECT_DIR)/DinoRunner",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = armanhk.DinoRunner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "DinoRunner-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -442,12 +452,12 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					DinoRunner/lib,
-					"$(PROJECT_DIR)/DinoRunner/lib",
+					"$(PROJECT_DIR)/DinoRunner",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = armanhk.DinoRunner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "DinoRunner-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
